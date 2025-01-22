@@ -11,9 +11,9 @@ var viewer = pannellum.viewer('panorama', {
             "type": "equirectangular",
             "panorama": "15.0.jpg", 
             "hfov":200,
-            "yaw":12,
+            "yaw":-15,
             "compass":true,
-            "northOffset":-12
+            "northOffset":15
         },
   
         "image-2": {
@@ -24,9 +24,9 @@ var viewer = pannellum.viewer('panorama', {
         "vaov":180,
         "minPitch":-25,
         "maxPitch": 25,
-        "yaw": 12,
+        "yaw": -15,
         "compass":true,
-        "northOffset":-12
+        "northOffset":15
       },
 
       "image-3": {
@@ -37,9 +37,9 @@ var viewer = pannellum.viewer('panorama', {
         "vaov":150,
         "minPitch":-25,
         "maxPitch": 25,
-        "yaw": 8,
+        "yaw": -20,
         "compass":true,
-        "northOffset":-8
+        "northOffset":20
       },
 
       "image-4":{
@@ -50,9 +50,9 @@ var viewer = pannellum.viewer('panorama', {
         "vaov":150,
         "minPitch":-25,
         "maxPitch": 25,
-        "yaw": 5,
+        "yaw": -20,
         "compass":true,
-        "northOffset":-5
+        "northOffset":20
         
       }, 
     }
@@ -121,10 +121,10 @@ function updateDegreeScale() {
   
     // Define initial yaw values for each image (adjust these as needed)
     var initialYaw = {
-      "image-1": 12,
-      "image-2": 12,
-      "image-3": 8,
-      "image-4": 5
+      "image-1": -15,
+      "image-2": -15,
+      "image-3": -20,
+      "image-4": -20
     };
   
     // Get the adjusted yaw value based on the current scene and initial yaw
